@@ -1,0 +1,32 @@
+#socials-list{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  z-index:5;
+  li{
+    margin:0 0 10px;
+    width:100px;
+    transform: translateX(73px);
+    transition: all 0.3s ease-in-out;
+    &.active{
+      transform: translateX(23px);
+    }
+  }
+  img{
+    float: left;
+    width:15px;
+    margin:0 10px 0 0;
+  }
+  a{
+    overflow: hidden;
+    display: block;
+  }
+  .btn{
+    color: $white;
+    text-transform: capitalize;
+    border-radius: 15px 0 0 15px;
+    height:30px;
+    padding:7px 5px 5px 7px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,269 @@
+.container{
+  max-width:1470px;
+  margin: 0 auto;
+}
+
+.container-lg{
+  max-width:1920px;
+  margin: 0 auto;
+}
+
+.drop-drag-area{
+  margin:0 0 30px;
+  min-height:403px;
+  line-height:18px;
+  font-size: 15px;
+}
+
+.drop-drag-holder{
+  width:57.7%;
+  background: $background-color-box;
+  border-radius: 15px;
+  padding:30px;
+  margin: 0 2%;
+  float: left;
+}
+
+.section-text{
+  margin:0 0 55px;
+  h2{
+    margin:0 0 8px;
+    color: #fdfdff;
+  }
+}
+
+.content-area{
+  color: $add-text-color;
+  overflow: hidden;
+  margin-bottom:133px;
+}
+
+.aside-large{
+  border-radius: 15px;
+  overflow: hidden;
+  width:20.5%;
+  height:600px;
+  float: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.title-des{
+  font-size: $font-size-base + 5;
+  color: $add-text-color;
+}
+
+.text-switcher{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  list-style: none;
+  li{
+    &.active{
+      .btn{
+        background: linear-gradient(130deg, #6193fe, #747aff);
+      }
+    }
+  }
+  .btn{
+    min-width:75px;
+  }
+  .material-icons{
+    font-size: 16px;
+  }
+  .btn-icons{
+    position: relative;
+    padding-left:36px;
+    .material-icons{
+      position: absolute;
+      left: 15px;
+      top: 7px;
+    }
+    .content_copy{
+      font-size: 12px;
+      top: 9px;
+    }
+  }
+}
+
+.drag-action{
+  background: #454159;
+  height:478px;
+  border: 5px dashed #666277;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .drag-title{
+    color: $white;
+    font-size: 25px;
+    margin:8px 0;
+    letter-spacing:-1px;
+  }
+  .material-icons{
+    font-size: 39px;
+    margin:0 0 15px;
+  }
+  p{
+    margin:0;
+    font-size: 13px;
+    font-family: $headings-font-family;
+    font-weight:700;
+    color: #6390fe;
+  }
+}
+
+.document-info{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:30px;
+  border-bottom: 1px solid #504c63;
+  padding-bottom:15px;
+  font-size: 13px;
+  .btn{
+    margin-right:8px;
+  }
+}
+
+.import-area{
+  span{
+    display: inline-block;
+    margin-top:3px;
+  }
+}
+
+.sidebar{
+  width:17.8%;
+  float: right;
+  img{
+    width:100%;
+    display: block;
+  }
+}
+
+.banner-info{
+  position: relative;
+  margin-bottom:30px;
+  border-radius: 15px;
+  overflow: hidden;
+  .banner-text{
+    position: absolute;
+    left: 15px;
+    right:15px;
+    top: 15px;
+    bottom: 20px;
+    color: $white;
+  }
+  .logo-area{
+    width:60px;
+    margin-bottom:40px;
+  }
+  h2{
+    line-height:30px;
+  }
+  .product{
+    margin:74px 0 5px 0;
+  }
+  >img{
+    min-height:320px;
+  }
+}
+
+.aside-info{
+  background: $background-color-box;
+  padding:8px 15px;
+  border-radius: 15px;
+  h3{
+    font-size: 20px;
+    color: #fdfdff;
+    margin-bottom:20px;
+  }
+  .title{
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #7b7988;
+    font-family: $headings-font-family;
+    margin-bottom:4px;
+    display: block;
+  }
+  ul{
+    padding-top:5px;
+    >li{
+      margin-bottom:6px;
+    }
+    .product-area{
+      border-bottom: 1px solid #504c63;
+      padding-bottom:7px;
+    }
+  }
+}
+
+.hidden{
+  display: none;
+}
+
+.insert_drive_file{
+  background: -webkit-linear-gradient(130deg, #fede6b, #ffc27c);
+  background: linear-gradient(130deg, #fede6b, #ffc27c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product{
+  font-size: 15px;
+  line-height:15px;
+  color: #fdfdff;
+  overflow: hidden;
+  img{
+    float: left;
+    width:35px;
+    margin:0 15px 0 0;
+  }
+  .name{
+    font-family: $headings-font-family;
+    font-weight:700;
+    color: #fdfdff;
+  }
+  span{
+    font-size: 11px;
+    color: #fdfdff;
+  }
+  .btn{
+    float: right;
+    min-width:52px;
+    text-align: center;
+  }
+  .product-area{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .product-text{
+    margin-top:2px;
+  }
+}
+
+
+
+
+//(темная версия)
+///*Основной цвет блоков на странице*/
+//backgound-color: #3a3650;
+///*Основной цвет страницы*/
+//background: linear-gradient(-50deg, #333047, #312e44);
+
+///*Основной цвет страницы (светлая версия)*/
+//background: linear-gradient(-50deg, #fafcff, #fbfcff);
+///*Основной цвет блоков на странице*/
+//backgound-color: #fdfdff;
+
+
+
+

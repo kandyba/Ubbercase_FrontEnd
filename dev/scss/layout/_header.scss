@@ -1,0 +1,128 @@
+#header{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  font-family: $headings-font-family;
+  color: $white;
+  padding:30px;
+}
+.header-controls{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content:space-between;
+  padding:3px 0 0 0;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: $font-size-base + 11;
+  color: $white;
+  &:hover{
+    color: $white;
+  }
+  img{
+    max-width:100%;
+    display: block;
+  }
+  .icon-area{
+    width:40px;
+    display: block;
+    float: left;
+  }
+  span{
+    padding-left:10px;
+    letter-spacing:-1px;
+  }
+}
+
+.modes{
+  color: $add-text-color;
+  font-size: 12px;
+}
+
+.nav-page{
+  padding-left:30px;
+}
+
+.day{
+  display: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  height:20px;
+  width:35px;
+  border-radius: 10px;
+  margin:0 0 0 10px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00ff00;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+input:checked + .slider {
+  background-color: #d3d3d3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ececec;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+///*Цвет логотипа*/
+//
+//1. /*фон*/ background: linear-gradient(-50deg, #9a84ff, #747aff);
+//2. /*буква U*/ color: ffffff;
+//3. /*буква b*/ color: dfdfff;
+//
+///*Цвета статусов*/
+//
+//1. /*активный*/ background: linear-gradient(-50deg, #84f191, #74e781);
+//2. /*приостановленный*/ background: linear-gradient(-50deg, #fdde6c, #ffc47d);
+//3. /*заблокированный админом*/ background: linear-gradient(-50deg, #ff9958, #ff731b);
+//4. /*остановленный*/ background: linear-gradient(-50deg, #fcac34, #cf9645);
+//
+//
+

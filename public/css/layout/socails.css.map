@@ -1,0 +1,1 @@
+{"version":3,"sources":["layout/socails.scss"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,SAAS;EACT,SAAS,EAIV;EAPD;IAKI,iBAAgB,EACjB","file":"socails.css","sourcesContent":[".socials-list{\n  position: static;\n  right: 0;\n  top: 50%;\n  li{\n    margin:0 0 10px;\n  }\n}\n"]}

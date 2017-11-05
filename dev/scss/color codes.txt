@@ -1,0 +1,77 @@
+﻿/*Основной цвет страницы (светлая версия)*/ 
+
+background: linear-gradient(-50deg, #fafcff, #fbfcff);
+
+
+/*Основной цвет страницы (темная версия)*/ 
+
+background: linear-gradient(-50deg, #333047, #312e44);
+
+
+/*Основной цвет блоков на странице (светлая версия)*/
+
+backgound-color: #fdfdff;
+
+
+/*Основной цвет блоков на странице (темная версия)*/
+
+backgound-color: #3a3650;
+
+
+/*Цвет логотипа*/
+
+1. /*фон*/ background: linear-gradient(-50deg, #9a84ff, #747aff);
+2. /*буква U*/ color: ffffff;
+3. /*буква b*/ color: dfdfff;
+
+
+/*Активные кнопки*/ 
+
+1. /*песочная*/ background: linear-gradient(-50deg, #fede6b, #ffc27c);            
+      /*hover*/ background: linear-gradient(-50deg, #f7ca6b, #ffc27c);  
+         
+2. /*фиолетовая*/ background: linear-gradient(-50deg, #9a84ff, #747aff);
+   	/*hover*/ background: linear-gradient(-50deg, #6193fe, #747aff);
+
+3. /*paypal донат*/ background: linear-gradient(-50deg, #2c7cd4, #2b4da2);
+	  /*hover*/ background: linear-gradient(-50deg, #2883c5, #2b4da2);
+
+4. /*paypal донат*/ background: linear-gradient(-50deg, #2c7cd4, #2b4da2);
+	  /*hover*/ background: linear-gradient(-50deg, #2883c5, #2b4da2);
+
+5. /*reddit*/ background: linear-gradient(-50deg, #ff9959, #ff7824);
+    /*hover*/ background: linear-gradient(-50deg, #ff7c4c, #ff7824);
+
+6. /*twitter*/ background: linear-gradient(-50deg, #069dff, #0199fb);
+     /*hover*/ background: linear-gradient(-50deg, #00b4f9, #0199fb);
+
+7.      /*vk*/ background: linear-gradient(-50deg, #4582c9, #3e72b1);
+     /*hover*/ background: linear-gradient(-50deg, #438bc0, #3e72b1);
+
+8. /*facebook*/ background: linear-gradient(-50deg, #3265d3, #2c56b5);
+      /*hover*/ background: linear-gradient(-50deg, #2f71ca, #2c56b5);
+
+
+/*Пассивные кнопки*/
+
+backgound-color: #fffff;
+
+
+/*Цвет текста*/
+
+1. /*основной*/ color: #261e38;
+                color: #ffffff;
+2. /*второй план*/ color: #827e8e;
+3. /*пассивный*/ color: #cdcccf;
+4. /*песочный*/ color: #ffc27c;
+5. /*фиолетовый*/ color: #747aff;
+
+
+/*Цвета статусов*/
+
+1. /*активный*/ background: linear-gradient(-50deg, #84f191, #74e781);
+2. /*приостановленный*/ background: linear-gradient(-50deg, #fdde6c, #ffc47d);
+3. /*заблокированный админом*/ background: linear-gradient(-50deg, #ff9958, #ff731b);
+4. /*остановленный*/ background: linear-gradient(-50deg, #fcac34, #cf9645);
+
+

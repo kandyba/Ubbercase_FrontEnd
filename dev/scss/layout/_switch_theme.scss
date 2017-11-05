@@ -1,0 +1,13 @@
+.switchTheme{
+  #wrapper{
+    color: $base-text-color;
+  }
+  .container-lg{
+    background: $switch-base-background-body;
+  }
+  .section-title,
+  .logo,
+  .banner-info .banner-info{
+    color: #000;
+  }
+}

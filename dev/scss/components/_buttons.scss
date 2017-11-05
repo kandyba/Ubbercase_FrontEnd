@@ -1,0 +1,89 @@
+.btn {
+  @include animate(background);
+  background: #666277;
+  color: $btn-color;
+  padding: 7px 13px;
+  font-size: $btn-font-size - 2;
+  line-height: $btn-line-height;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  font-weight:700;
+  display: inline-block;
+  vertical-align: top;
+  font-family: $headings-font-family;
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  &.btn-yellow{
+    background: linear-gradient(130deg, #fede6b, #ffc27c);
+    color: $white;
+    &:hover{
+      background: linear-gradient(130deg, #f7ca6b, #ffc27c);
+    }
+  }
+  &.btn-violet{
+    background: linear-gradient(-50deg, #9a84ff, #747aff);
+    color: $white;
+    &:hover{
+      background: linear-gradient(130deg, #6193fe, #747aff);
+    }
+  }
+  &.btn-violet-passive{
+    background: #666277;
+    color: $white;
+    &:hover{
+      background: linear-gradient(130deg, #6193fe, #747aff);
+    }
+  }
+  &.btn-paypal{
+    background: linear-gradient(130deg, #2c7cd4, #2b4da2);
+    &:hover{
+      background: linear-gradient(130deg, #2883c5, #2b4da2);
+    }
+  }
+  &.btn-paypal-donate{
+    background: linear-gradient(130deg, #2c7cd4, #2b4da2);
+    &:hover{
+      background: linear-gradient(130deg, #2883c5, #2b4da2);
+    }
+  }
+  &.btn-reddit{
+    background: linear-gradient(130deg, #ff9959, #ff7824);
+    &:hover{
+      background: linear-gradient(130deg, #ff7c4c, #ff7824);
+    }
+  }
+  &.btn-twitter{
+    background: linear-gradient(130deg, #069dff, #0199fb);
+    &:hover{
+      background: linear-gradient(130deg, #00b4f9, #0199fb);
+    }
+  }
+  &.btn-vk{
+    background: linear-gradient(130deg, #4582c9, #3e72b1);
+    &:hover{
+      background: linear-gradient(130deg, #438bc0, #3e72b1);
+    }
+  }
+  &.vk{
+    background: #4481c6;
+  }
+  &.twitter{
+    background: #039cff;
+  }
+  &.btn-facebook{
+    background: linear-gradient(130deg, #3265d3, #2c56b5);
+    &:hover{
+      background: linear-gradient(130deg, #2f71ca, #2c56b5);
+    }
+  }
+  &.btn-sm{
+    padding:2px;
+  }
+}
+///*Пассивные кнопки*/
+//backgound-color: #fffff;
+///*Цвет текста*/
+//2. /*второй план*/ color: #827e8e;
+//3. /*пассивный*/ color: #cdcccf;

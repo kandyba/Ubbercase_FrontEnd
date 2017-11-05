@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+.DS_Store
+.idea/
+dev/.DS_Store
+dev/scss/.DS_Store
+dev/scss/.sass-lint.yml
+node_modules/
+public/.DS_Store
+public/style.css.map
