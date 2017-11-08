@@ -6,64 +6,79 @@
   font-size: $btn-font-size - 2;
   line-height: $btn-line-height;
   border-radius: 15px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease-in-out;
   font-weight:700;
   display: inline-block;
   vertical-align: top;
+  min-width:75px;
+  text-align: center;
   font-family: $headings-font-family;
   &:hover {
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  &.rounded{
+    min-width:0;
+    width:30px;
+    height:30px;
+    position: relative;
+    border-radius: 50%;
+    .fa{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin:-7px 0 0 -5px;
+      font-size: 13px;
+    }
   }
   &.btn-yellow{
-    background: linear-gradient(130deg, #fede6b, #ffc27c);
+    background: linear-gradient(135deg, #fede6b, #ffc27c);
     color: $white;
     &:hover{
-      background: linear-gradient(130deg, #f7ca6b, #ffc27c);
+      box-shadow: 0 0 10px rgba(255, 222, 233, 0.1);
     }
   }
   &.btn-violet{
-    background: linear-gradient(-50deg, #9a84ff, #747aff);
+    background: linear-gradient(135deg, #9a84ff, #747aff);
     color: $white;
     &:hover{
-      background: linear-gradient(130deg, #6193fe, #747aff);
+      box-shadow: 0 0 10px rgba(255, 222, 233, 0.1);
     }
   }
   &.btn-violet-passive{
     background: #666277;
     color: $white;
     &:hover{
-      background: linear-gradient(130deg, #6193fe, #747aff);
+      background: linear-gradient(135deg, #6193fe, #747aff);
     }
   }
   &.btn-paypal{
-    background: linear-gradient(130deg, #2c7cd4, #2b4da2);
+    background: linear-gradient(135deg, #2c7cd4, #2b4da2);
     &:hover{
-      background: linear-gradient(130deg, #2883c5, #2b4da2);
+      background: linear-gradient(135deg, #2883c5, #2b4da2);
     }
   }
   &.btn-paypal-donate{
-    background: linear-gradient(130deg, #2c7cd4, #2b4da2);
+    background: linear-gradient(135deg, #2c7cd4, #2b4da2);
     &:hover{
-      background: linear-gradient(130deg, #2883c5, #2b4da2);
+      background: linear-gradient(135deg, #2883c5, #2b4da2);
     }
   }
   &.btn-reddit{
-    background: linear-gradient(130deg, #ff9959, #ff7824);
+    background: linear-gradient(135deg, #ff9959, #ff7824);
     &:hover{
-      background: linear-gradient(130deg, #ff7c4c, #ff7824);
+      background: linear-gradient(135deg, #ff7c4c, #ff7824);
     }
   }
   &.btn-twitter{
-    background: linear-gradient(130deg, #069dff, #0199fb);
+    background: linear-gradient(135deg, #069dff, #0199fb);
     &:hover{
-      background: linear-gradient(130deg, #00b4f9, #0199fb);
+      background: linear-gradient(135deg, #00b4f9, #0199fb);
     }
   }
   &.btn-vk{
-    background: linear-gradient(130deg, #4582c9, #3e72b1);
+    background: linear-gradient(135deg, #4582c9, #3e72b1);
     &:hover{
-      background: linear-gradient(130deg, #438bc0, #3e72b1);
+      background: linear-gradient(135deg, #438bc0, #3e72b1);
     }
   }
   &.vk{
@@ -73,9 +88,9 @@
     background: #039cff;
   }
   &.btn-facebook{
-    background: linear-gradient(130deg, #3265d3, #2c56b5);
+    background: linear-gradient(135deg, #3265d3, #2c56b5);
     &:hover{
-      background: linear-gradient(130deg, #2f71ca, #2c56b5);
+      background: linear-gradient(135deg, #2f71ca, #2c56b5);
     }
   }
   &.btn-sm{

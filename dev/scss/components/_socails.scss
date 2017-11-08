@@ -1,25 +1,33 @@
 #socials-list{
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 50%;
   z-index:5;
+  transform: translateY(-50%);
+  text-align: left;
+  transition: all 0.3s ease;
+  &.dinamic-position{
+    transform: translateY(0);
+  }
   li{
     margin:0 0 10px;
     width:100px;
-    transform: translateX(73px);
+    transform: translateX(72px);
     transition: all 0.3s ease-in-out;
     &.active{
-      transform: translateX(23px);
+      transform: translateX(22px);
     }
   }
-  img{
+  .fa{
     float: left;
-    width:15px;
+    font-size: 15px;
     margin:0 10px 0 0;
+    width:13px;
   }
   a{
     overflow: hidden;
     display: block;
+    text-align: left;
   }
   .btn{
     color: $white;
@@ -28,5 +36,16 @@
     height:30px;
     padding:7px 5px 5px 7px;
     font-size: 10px;
+  }
+  .btn-facebook{
+    .fa{
+      margin-left:4px;
+      margin-right:4px;
+    }
+  }
+  .btn-twitter{
+    .fa{
+      margin-left:2px;
+    }
   }
 }

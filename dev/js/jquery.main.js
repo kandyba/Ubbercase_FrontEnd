@@ -2,6 +2,11 @@ $(document).ready( function() {
   tooltip();
   addBodyClass();
   accordion();
+  centeredBlock();
+});
+
+$(document).onload( function() {
+  centeredBlock();
 });
 
 function tooltip(){
@@ -98,3 +103,22 @@ function accordion(){
     }
   });
 }
+
+function centeredBlock(){
+  var element = $('#socials-list');
+
+  $(window).on('load resize scroll', function(){
+    height = $(window).height();
+    elHeight = element.outerHeight();
+    elPosition = (height - elHeight) / 2 + $(window).scrollTop() + "px";
+    element.css('top', elPosition);
+    element.addClass('dinamic-position');
+  });
+
+  // $(window).on('scroll', function(){
+  //   this.css("top", (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px");
+  //   return this;
+  // });
+
+}
+

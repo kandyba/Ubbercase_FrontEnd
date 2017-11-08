@@ -10,4 +10,21 @@
   .banner-info .banner-info{
     color: #000;
   }
+  .logo{
+    color: #18132c;
+  }
+  .section-title,
+  .title-des{
+    color: #19142d;
+  }
+  &.btn-yellow{
+    &:hover{
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+  &.btn-violet{
+    &:hover{
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
 }

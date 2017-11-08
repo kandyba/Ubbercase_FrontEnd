@@ -6,6 +6,8 @@
 .container-lg{
   max-width:1920px;
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .drop-drag-area{
@@ -16,12 +18,12 @@
 }
 
 .drop-drag-holder{
-  width:57.7%;
+  //width:57.7%;
   background: $background-color-box;
   border-radius: 15px;
   padding:30px;
-  margin: 0 2%;
-  float: left;
+  margin: 0 30px;
+  overflow: hidden;
 }
 
 .section-text{
@@ -36,6 +38,10 @@
   color: $add-text-color;
   overflow: hidden;
   margin-bottom:133px;
+}
+
+.content-holder{
+  overflow: hidden;
 }
 
 .aside-large{
@@ -63,12 +69,9 @@
   li{
     &.active{
       .btn{
-        background: linear-gradient(130deg, #6193fe, #747aff);
+        background: linear-gradient(135deg, #6193fe, #747aff);
       }
     }
-  }
-  .btn{
-    min-width:75px;
   }
   .material-icons{
     font-size: 16px;
@@ -116,6 +119,30 @@
   }
 }
 
+.droped-text-area{
+  color: #fdfdff;
+  text-align: justify;
+  position: relative;
+  padding-right: 50px;
+  margin-top:-5px;
+  font-size: 14px;
+  font-family: $headings-font-family;
+  .text{
+    overflow-y: scroll;
+    max-height:485px;
+    padding-right: 15px;
+    margin-bottom:30px;
+  }
+  .rounded{
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+  p{
+    margin-bottom:22px;
+  }
+}
+
 .document-info{
   display: flex;
   flex-direction:row;
@@ -138,8 +165,9 @@
 }
 
 .sidebar{
-  width:17.8%;
+  width:22.4%;
   float: right;
+  margin-left:30px;
   img{
     width:100%;
     display: block;
@@ -148,7 +176,7 @@
 
 .banner-info{
   position: relative;
-  margin-bottom:30px;
+  margin-bottom:80px;
   border-radius: 15px;
   overflow: hidden;
   .banner-text{
@@ -156,21 +184,31 @@
     left: 15px;
     right:15px;
     top: 15px;
-    bottom: 20px;
+    bottom: 0;
     color: $white;
+    z-index: 2;
+  }
+  .overlay{
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    opacity:0.65;
+    background: linear-gradient(135deg, #9a84ff, #747aff);
   }
   .logo-area{
     width:60px;
-    margin-bottom:40px;
+    margin-bottom:20px;
+    border-radius: 13px;
+    padding:10px;
+    background: linear-gradient(135deg, #9a84ff, #747aff);
   }
   h2{
     line-height:30px;
   }
   .product{
-    margin:74px 0 5px 0;
-  }
-  >img{
-    min-height:320px;
+    margin:0 0 5px 0;
   }
 }
 
@@ -208,8 +246,8 @@
 }
 
 .insert_drive_file{
-  background: -webkit-linear-gradient(130deg, #fede6b, #ffc27c);
-  background: linear-gradient(130deg, #fede6b, #ffc27c);
+  background: -webkit-linear-gradient(135deg, #fede6b, #ffc27c);
+  background: linear-gradient(135deg, #fede6b, #ffc27c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -219,10 +257,22 @@
   line-height:15px;
   color: #fdfdff;
   overflow: hidden;
-  img{
+  .logo-area{
+    width:34px;
+    height:34px;
+    border-radius: 9px;
+    padding:8px;
+    overflow: hidden;
     float: left;
+    margin-right:15px;
+    background: linear-gradient(135deg, #9a84ff, #747aff);
+    &.passive{
+      background: none;
+      border: 1px solid #504c63;
+    }
+  }
+  img{
     width:35px;
-    margin:0 15px 0 0;
   }
   .name{
     font-family: $headings-font-family;
