@@ -22,7 +22,7 @@
   background: $background-color-box;
   border-radius: 15px;
   padding:30px;
-  margin: 0 30px;
+  margin: 0 20px;
   overflow: hidden;
 }
 
@@ -36,12 +36,13 @@
 
 .content-area{
   color: $add-text-color;
-  overflow: hidden;
-  margin-bottom:133px;
+  margin-bottom:123px;
+  @extend %clearfix;
 }
 
 .content-holder{
   overflow: hidden;
+  padding:5px;
 }
 
 .aside-large{
@@ -50,6 +51,8 @@
   width:20.5%;
   height:600px;
   float: left;
+  margin-bottom:5px;
+  margin-top:5px;
 }
 
 .text-center{
@@ -176,7 +179,7 @@
 
 .banner-info{
   position: relative;
-  margin-bottom:80px;
+  margin-bottom:85px;
   border-radius: 15px;
   overflow: hidden;
   .banner-text{
@@ -233,10 +236,25 @@
     padding-top:5px;
     >li{
       margin-bottom:6px;
+      &:first-child{
+        .product-area{
+          &:after{
+            display: none;
+          }
+        }
+      }
     }
     .product-area{
-      border-bottom: 1px solid #504c63;
       padding-bottom:7px;
+      position: relative;
+      &:after{
+        border-top: 1px solid #504c63;
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        top: -6px;
+      }
     }
   }
 }
@@ -256,7 +274,7 @@
   font-size: 15px;
   line-height:15px;
   color: #fdfdff;
-  overflow: hidden;
+  @extend %clearfix;
   .logo-area{
     width:34px;
     height:34px;
@@ -282,6 +300,7 @@
   span{
     font-size: 11px;
     color: #fdfdff;
+    font-family: $headings-font-family;
   }
   .btn{
     float: right;
@@ -289,7 +308,7 @@
     text-align: center;
   }
   .product-area{
-    overflow: hidden;
+    @extend %clearfix;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -298,6 +317,14 @@
   .product-text{
     margin-top:2px;
   }
+}
+
+.sidebar .theme{
+  display: none;
+}
+
+.mask{
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 

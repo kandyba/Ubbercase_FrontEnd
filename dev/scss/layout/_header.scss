@@ -6,6 +6,7 @@
   font-family: $headings-font-family;
   color: $white;
   padding:30px;
+  font-weight:700;
 }
 .header-controls{
   display: flex;
@@ -77,10 +78,10 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 20px;
-  width: 20px;
-  left: 0;
-  bottom: 0;
+  height: 18px;
+  width: 18px;
+  left: 1px;
+  bottom: 1px;
   background-color: white;
   -webkit-transition: .4s;
   transition: .4s;

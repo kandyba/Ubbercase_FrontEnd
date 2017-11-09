@@ -87,9 +87,9 @@ function tooltip(){
 function addBodyClass(){
   $('.switch input:checkbox').change(function(){
     if($(this).is(":checked")) {
-      $('body').addClass("switchTheme");
+      $('body').addClass("switch-theme");
     } else {
-      $('body').removeClass("switchTheme");
+      $('body').removeClass("switch-theme");
     }
   });
 }

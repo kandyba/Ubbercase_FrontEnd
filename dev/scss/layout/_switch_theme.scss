@@ -1,9 +1,9 @@
-.switchTheme{
+.switch-theme{
   #wrapper{
     color: $base-text-color;
   }
   .container-lg{
-    background: $switch-base-background-body;
+    background: #fafcff;
   }
   .section-title,
   .logo,
@@ -17,14 +17,130 @@
   .title-des{
     color: #19142d;
   }
-  &.btn-yellow{
-    &:hover{
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  .btn{
+    &.btn-yellow{
+      &:hover{
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      }
+    }
+    &.btn-violet{
+      &:hover{
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+      }
     }
   }
-  &.btn-violet{
-    &:hover{
-      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  .slider.round:before {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  .drop-drag-holder,
+  .drag-action,
+  .aside-info{
+    background: #fdfdff;
+    color: #231c40;
+  }
+  .drag-action {
+    border: 5px dashed #f1f1f4;
+  }
+  .droped-text-area{
+    color: #231c40;
+  }
+  .drag-action .drag-title{
+    color: #18132c;
+  }
+  .btn{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+    &.btn-violet-passive{
+      background: #fff;
+      color: #18132c;
+      &:hover{
+        background: linear-gradient(135deg, #6193fe, #747aff);
+        color: #fff;
+      }
     }
+  }
+  .document-info{
+    color: #7b7988;
+    border-color: #f1f1f4;
+  }
+  .aside-info .title{
+    color: #7b7988;
+  }
+  .aside-info h3,
+  .product .name{
+    color: #18132c;
+  }
+  .product span{
+    color: #9998a3;
+  }
+  .aside-info ul .product-area{
+    border-color: #f1f1f4;
+  }
+  .text-switcher {
+    li{
+      &.active {
+        .btn{
+          color: #fff;
+        }
+      }
+    }
+  }
+  #footer {
+    .copy{
+      color: #7b7988;
+    }
+  }
+  .country-list {
+    li {
+      a{
+        color: #19142d;
+        &:hover{
+          color: #555;
+        }
+      }
+    }
+  }
+  .additional-info{
+    .text{
+      color: #19142d;
+    }
+  }
+  .additional-info {
+    .text > div{
+      color: #19142d;
+    }
+    .name{
+      color: #7b7988;
+    }
+  }
+  input:checked + .slider{
+    background: #f1f1f1;
+  }
+  .banner-text .product {
+    .name {
+      color: #fff;
+    }
+    span{
+      color: #fff;
+    }
+  }
+  .aside-info ul .product-area:after{
+    border-color: #f1f1f4;
+  }
+  .sidebar .product .logo-area.passive{
+    img{
+      display: none;
+    }
+    .theme{
+      display: block;
+    }
+  }
+  .product .logo-area.passive {
+    border: 1px solid #f1f1f4;
+  }
+  .modes{
+    color: #261e38;
+  }
+  .nav-page{
+    color: #261e38;
   }
 }
