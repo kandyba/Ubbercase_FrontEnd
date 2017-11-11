@@ -1,5 +1,4 @@
 .btn {
-  @include animate(background);
   background: #666277;
   color: $btn-color;
   padding: 7px 13px;
@@ -14,8 +13,6 @@
   min-width:75px;
   text-align: center;
   font-family: $headings-font-family;
-  &:hover {
-  }
   &.rounded{
     min-width:0;
     width:30px;
@@ -30,52 +27,52 @@
       font-size: 13px;
     }
   }
-  &.btn-yellow{
+  &-yellow{
     background: linear-gradient(135deg, #fede6b, #ffc27c);
     color: $white;
     &:hover{
       box-shadow: 0 0 10px rgba(255, 222, 233, 0.1);
     }
   }
-  &.btn-violet{
+  &-violet{
     background: linear-gradient(135deg, #9a84ff, #747aff);
     color: $white;
     &:hover{
       box-shadow: 0 0 10px rgba(255, 222, 233, 0.1);
     }
   }
-  &.btn-violet-passive{
+  &-violet-passive{
     background: #666277;
     color: $white;
     &:hover{
       background: linear-gradient(135deg, #6193fe, #747aff);
     }
   }
-  &.btn-paypal{
+  &-paypal{
     background: linear-gradient(135deg, #2c7cd4, #2b4da2);
     &:hover{
       background: linear-gradient(135deg, #2883c5, #2b4da2);
     }
   }
-  &.btn-paypal-donate{
+  &-paypal-donate{
     background: linear-gradient(135deg, #2c7cd4, #2b4da2);
     &:hover{
       background: linear-gradient(135deg, #2883c5, #2b4da2);
     }
   }
-  &.btn-reddit{
+  &-reddit{
     background: linear-gradient(135deg, #ff9959, #ff7824);
     &:hover{
       background: linear-gradient(135deg, #ff7c4c, #ff7824);
     }
   }
-  &.btn-twitter{
+  &-twitter{
     background: linear-gradient(135deg, #069dff, #0199fb);
     &:hover{
       background: linear-gradient(135deg, #00b4f9, #0199fb);
     }
   }
-  &.btn-vk{
+  &-vk{
     background: linear-gradient(135deg, #4582c9, #3e72b1);
     &:hover{
       background: linear-gradient(135deg, #438bc0, #3e72b1);
@@ -87,13 +84,13 @@
   &.twitter{
     background: #039cff;
   }
-  &.btn-facebook{
+  &-facebook{
     background: linear-gradient(135deg, #3265d3, #2c56b5);
     &:hover{
       background: linear-gradient(135deg, #2f71ca, #2c56b5);
     }
   }
-  &.btn-sm{
+  &-sm{
     padding:2px;
   }
 }

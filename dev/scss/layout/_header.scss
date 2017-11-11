@@ -61,7 +61,9 @@
   margin:0 0 0 10px;
 }
 
-.switch input {display:none;}
+.switch{
+  input {display:none;}
+}
 
 .slider {
   position: absolute;
@@ -73,58 +75,41 @@
   background-color: #00ff00;
   -webkit-transition: .4s;
   transition: .4s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+  }
 }
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 1px;
-  bottom: 1px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
+input{
+  &:checked + .slider {
+    background-color: #d3d3d3;
+  }
+  &:focus + .slider {
+    box-shadow: 0 0 1px #ececec;
+  }
+  &:checked + .slider:before {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
-input:checked + .slider {
-  background-color: #d3d3d3;
+.slider{
+  &.round {
+    border-radius: 34px;
+    &:before {
+      border-radius: 50%;
+    }
+  }
 }
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #ececec;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-///*Цвет логотипа*/
-//
-//1. /*фон*/ background: linear-gradient(-50deg, #9a84ff, #747aff);
-//2. /*буква U*/ color: ffffff;
-//3. /*буква b*/ color: dfdfff;
-//
-///*Цвета статусов*/
-//
-//1. /*активный*/ background: linear-gradient(-50deg, #84f191, #74e781);
-//2. /*приостановленный*/ background: linear-gradient(-50deg, #fdde6c, #ffc47d);
-//3. /*заблокированный админом*/ background: linear-gradient(-50deg, #ff9958, #ff731b);
-//4. /*остановленный*/ background: linear-gradient(-50deg, #fcac34, #cf9645);
-//
-//
-

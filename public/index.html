@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.css" />
 </head>
 <body class="">
   <div id="wrapper">
@@ -46,7 +47,7 @@
           </a>
         </li>
       </ul>
-      <header id="header">
+      <header class="display-none-xs" id="header">
         <a href="#" class="logo">
           <div class="icon-area">
             <img src="images/logo/svg/icon.svg" alt="image description">
@@ -68,10 +69,112 @@
           </a>
         </div>
       </header>
+      <div class="heading-area">
+        <div class="slick-slider">
+          <div class="product">
+            <div class="img-area">
+              <img src="images/xxl_img.jpg" alt="bg">
+            </div>
+            <div class="logo-area">
+              <img src="images/logo/svg/icon_passive.svg" alt="logo">
+            </div>
+            <div class="product-area">
+              <div class="product-text">
+                <div class="name">
+                  Product Name
+                </div>
+                <span>Category</span>
+              </div>
+              <a class="btn btn-violet btn-sm" href="#">GET</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="logo-area">
+              <img src="images/logo/svg/icon_passive.svg" alt="logo">
+            </div>
+            <div class="product-area">
+              <div class="product-text">
+                <div class="name">
+                  Product Name
+                </div>
+                <span>Category</span>
+              </div>
+              <a class="btn btn-violet btn-sm" href="#">GET</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="logo-area">
+              <img src="images/logo/svg/icon_passive.svg" alt="logo">
+            </div>
+            <div class="product-area">
+              <div class="product-text">
+                <div class="name">
+                  Product Name
+                </div>
+                <span>Category</span>
+              </div>
+              <a class="btn btn-violet btn-sm" href="#">GET</a>
+            </div>
+          </div>
+          <div class="product">
+            <div class="logo-area">
+              <img src="images/logo/svg/icon_passive.svg" alt="logo">
+            </div>
+            <div class="product-area">
+              <div class="product-text">
+                <div class="name">
+                  Product Name
+                </div>
+                <span>Category</span>
+              </div>
+              <a class="btn btn-violet btn-sm" href="#">GET</a>
+            </div>
+          </div>
+        </div>
+        <div class="list-holder">
+          <ul class="country-list">
+            <li>
+              <a href="#">
+                <img src="images/country/tr.svg" alt="tr">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/country/es.svg" alt="es">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/country/it.svg" alt="it">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/country/ru.svg" alt="ru">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/country/fr.svg" alt="fr">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/country/de.svg" alt="de">
+              </a>
+            </li>
+            <li class="button">
+              <a href="#">
+                <img src="images/country/us.svg" alt="us">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="container">
         <main>
           <section>
-            <div class="text-center">
+            <div class="text-center display-none-xs">
               <div class="section-text">
                 <h2 class="section-title">Typed something and forgot to off the Caps Lock? </h2>
                 <p class="title-des">No problem, here is a simple and fast way to fix your text!</p>
@@ -163,14 +266,14 @@
                 </aside>
                 <div class="drop-drag-holder mask">
                   <div class="drop-drag-area">
-                    <p class="hidden">Paste your text or start typing or just drag and drop your .txt or .doc file</p>
+                    <p class="">Paste your text or start typing or just drag and drop your .txt or .doc file</p>
                     <div class="drag-action ">
                       <i class="material-icons insert_drive_file">insert_drive_file</i>
                       <h4 class="drag-title">drag & drop your text here</h4>
                       <p>.doc or .txt & 25Mb max file size</p>
                     </div>
                   </div>
-                  <div class="droped-text-area hidden">
+                  <div class="droped-text-area ">
                     <a href="#" class="btn rounded btn-yellow">
                       <i class="fa fa-trash" aria-hidden="true"></i>
                     </a>
@@ -180,70 +283,72 @@
                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     </div>
                   </div>
-                  <div class="document-info hidden">
+                  <div class="document-info ">
                     <div class="import-area">
                       <a href="#" class="btn btn-yellow">Import .doc or .txt</a>
-                      <span>or just drag & drop here</span>
+                      <div class="display-none-xs">or just drag & drop here</div>
                     </div>
-                    <div>Character Count: 11 256 / Word Count: 2 763</div>
+                    <div><span>Character Count: 11 256</span> <i class="display-none-xs">/</i> <span>Word Count: 2 763</span></div>
                   </div>
-                  <ul class="text-switcher">
-                    <li class="active">
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="Abc. Abc.">
-                        Abc. Abc.
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="abc abc">
-                        abc abc
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="ABC ABC">
-                        ABC ABC
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="Abc Abc">
-                        Abc Abc
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="aBc AbC">
-                        aBc AbC
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-violet-passive" rel="tooltip" title="AbC aBc">
-                        AbC aBc
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title="copy">
-                        <i class="material-icons content_copy">content_copy</i>
-                        copy
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title=".txt">
-                        <i class="material-icons">file_download</i>
-                        .txt
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title=".doc">
-                        <i class="material-icons">file_download</i>
-                        .doc
-                      </a>
-                    </li>
-                  </ul>
+                  <div id="scrollbox">
+                    <ul class="text-switcher">
+                      <li class="active">
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="Abc. Abc.">
+                          Abc. Abc.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="abc abc">
+                          abc abc
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="ABC ABC">
+                          ABC ABC
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="Abc Abc">
+                          Abc Abc
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="aBc AbC">
+                          aBc AbC
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-violet-passive" rel="tooltip" title="AbC aBc">
+                          AbC aBc
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title="copy">
+                          <i class="material-icons content_copy">content_copy</i>
+                          copy
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title=".txt">
+                          <i class="material-icons">file_download</i>
+                          .txt
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="btn btn-icons btn-violet-passive" rel="tooltip" title=".doc">
+                          <i class="material-icons">file_download</i>
+                          .doc
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </section>
         </main>
       </div>
-      <footer id="footer">
+      <footer id="footer" class="display-none-xs">
         <div class="copy">Copyright Ubbercase 2017. All rights reserved.</div>
         <ul class="country-list">
           <li>
@@ -254,37 +359,37 @@
           </li>
           <li>
             <a href="#">
-              <img src="images/country/es.svg" alt="tr">
+              <img src="images/country/es.svg" alt="es">
               <div>Spanish</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/country/us.svg" alt="tr">
+              <img src="images/country/us.svg" alt="us">
               <div>English</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/country/ru.svg" alt="tr">
+              <img src="images/country/ru.svg" alt="ru">
               <div>Russian</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/country/fr.svg" alt="tr">
+              <img src="images/country/fr.svg" alt="fr">
               <div>French</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/country/de.svg" alt="tr">
+              <img src="images/country/de.svg" alt="de">
               <div>German</div>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="images/country/it.svg" alt="tr">
+              <img src="images/country/it.svg" alt="it">
               <div>Italian</div>
             </a>
           </li>
@@ -305,4 +410,6 @@
 </body>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
 <script src="js/jquery.main.js" type="text/javascript"></script>
+<script src="js/enscroll-0.6.2.min.js" type="text/javascript"></script>
+<script src="js/slick.js" type="text/javascript"></script>
 </html>

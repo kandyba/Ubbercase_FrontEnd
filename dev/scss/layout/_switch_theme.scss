@@ -1,6 +1,7 @@
 .switch-theme{
   #wrapper{
-    color: $base-text-color;
+    //color: #edeef0;
+    background: #edeef0;
   }
   .container-lg{
     background: #fafcff;
@@ -142,5 +143,16 @@
   }
   .nav-page{
     color: #261e38;
+  }
+  .heading-area .product{
+    background: #fefdff;
+  }
+}
+
+@media (max-width: 1200px){
+  .switch-theme{
+    .horizontal-handle2 {
+      background: #dfdee3;
+    }
   }
 }

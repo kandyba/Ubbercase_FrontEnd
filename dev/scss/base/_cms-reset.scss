@@ -30,14 +30,12 @@ ol {
 
 dl {
   @extend %clearfix;
-
   dt {
     float: left;
     clear: left;
     padding-right: 0.3em;
     font-weight: bold;
   }
-
   dd {
     overflow: hidden;
   }

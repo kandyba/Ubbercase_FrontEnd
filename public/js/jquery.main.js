@@ -3,10 +3,9 @@ $(document).ready( function() {
   addBodyClass();
   accordion();
   centeredBlock();
-});
-
-$(document).onload( function() {
-  centeredBlock();
+  horizontalScrolling();
+  slickSlider();
+  addClassOnClick();
 });
 
 function tooltip(){
@@ -84,6 +83,30 @@ function tooltip(){
   });
 }
 
+function slickSlider(){
+  $('.slick-slider').slick({
+    dots: false,
+    vertical: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay:true,
+    autoplaySpeed:3000,
+    pauseOnHover:true,
+    arrows:false,
+    verticalSwiping: true
+  });
+}
+
+function addClassOnClick(){
+  $('.country-list .button').click(function(){
+    if(!$('.list-holder').hasClass('open')){
+      $('.list-holder').addClass('open');
+    } else {
+      $('.list-holder').removeClass('open');
+    }
+  });
+}
+
 function addBodyClass(){
   $('.switch input:checkbox').change(function(){
     if($(this).is(":checked")) {
@@ -114,11 +137,13 @@ function centeredBlock(){
     element.css('top', elPosition);
     element.addClass('dinamic-position');
   });
-
-  // $(window).on('scroll', function(){
-  //   this.css("top", (($(window).height() - this.outerHeight()) / 2) + $(window).scrollTop() + "px");
-  //   return this;
-  // });
-
 }
 
+function horizontalScrolling(){
+  $('#scrollbox').enscroll({
+    horizontalScrolling: true,
+    horizontalTrackClass: 'horizontal-track2',
+    horizontalHandleClass: 'horizontal-handle2',
+    cornerClass: 'corner2'
+  });
+}
