@@ -348,7 +348,7 @@
 
 .heading-area{
   max-width:320px;
-  margin:3px auto;
+  margin:11px auto 20px;
   overflow: hidden;
   position: relative;
   .slick-slider{
@@ -364,7 +364,7 @@
   .list-holder{
     position: absolute;
     right: 4px;
-    top: 8px;
+    top: 10px;
     width:42px;
     white-space: nowrap;
     height:45px;
@@ -542,9 +542,10 @@
     background: none;
   }
   .drop-drag-holder{
-    padding:10px;
+    padding:13px 17px;
     max-width: 320px;
     margin:0 auto;
+    line-height: 18px;
   }
   .sidebar{
     display: none;
@@ -573,6 +574,10 @@
     span{
       display: block;
     }
+  }
+  .content-holder,
+  .drop-drag-holder{
+    overflow: visible;
   }
 }
 

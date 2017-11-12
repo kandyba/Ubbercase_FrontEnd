@@ -11,6 +11,12 @@
   /* 2 */
   overflow: hidden; }
 
+.display-inline {
+  display: inline; }
+
+.text-white-color {
+  color: #fff !important; }
+
 html {
   box-sizing: border-box; }
 
@@ -967,7 +973,7 @@ input:checked + .slider:before {
 
 .heading-area {
   max-width: 320px;
-  margin: 3px auto;
+  margin: 11px auto 20px;
   overflow: hidden;
   position: relative; }
   .heading-area .slick-slider {
@@ -981,7 +987,7 @@ input:checked + .slider:before {
   .heading-area .list-holder {
     position: absolute;
     right: 4px;
-    top: 8px;
+    top: 10px;
     width: 42px;
     white-space: nowrap;
     height: 45px;
@@ -1102,9 +1108,10 @@ input:checked + .slider:before {
   #wrapper {
     background: none; }
   .drop-drag-holder {
-    padding: 10px;
+    padding: 13px 17px;
     max-width: 320px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    line-height: 18px; }
   .sidebar {
     display: none; }
   .text-switcher {
@@ -1123,7 +1130,10 @@ input:checked + .slider:before {
   .document-info {
     text-align: right; }
     .document-info span {
-      display: block; } }
+      display: block; }
+  .content-holder,
+  .drop-drag-holder {
+    overflow: visible; } }
 
 .switch-theme #wrapper {
   background: #edeef0; }
