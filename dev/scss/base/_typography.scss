@@ -15,7 +15,7 @@ h5,
 h6,
 .h6,
 .h,
-side-h{
+.side-h{
   font-family: $headings-font-family;
   font-weight: 700;
   margin: 0 0 30px;
@@ -32,13 +32,18 @@ a {
   &:hover,
   &:focus {
     color: $white;
-
     text-decoration: $text-decoration-hover;
   }
 }
 
-side-h { /* самый большой плавающий вертикальный заголовок*/
+.side-h {
   font-size: 120px;
+  transform: rotate(-90deg);
+  position: absolute;
+  width:800px;
+  left: 0;
+  top: 0;
+  color: #424258;
 }
 
 h1 {

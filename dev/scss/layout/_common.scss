@@ -350,6 +350,7 @@
   max-width:320px;
   margin:11px auto 20px;
   overflow: hidden;
+  display: none;
   position: relative;
   .slick-slider{
     width:250px;
@@ -413,7 +414,7 @@
   .banner-info{
     h2,
     .logo-area{
-      margin-bottom:10px;
+      margin-bottom:6px;
     }
   }
   .aside-info{
@@ -532,6 +533,9 @@
   .container-lg{
     background: none;
   }
+  .heading-area{
+    display: block;
+  }
   #socials-list{
     display: none;
   }
@@ -578,6 +582,16 @@
   .content-holder,
   .drop-drag-holder{
     overflow: visible;
+  }
+  .droped-text-area .rounded {
+    right: 7px;
+    padding: 5px;
+    width:20px;
+    height:20px;
+    .fa{
+      font-size: 11px;
+      margin: -6px 0 0 -5px;
+    }
   }
 }
 

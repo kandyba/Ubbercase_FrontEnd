@@ -1,0 +1,37 @@
+.home-hage{
+  display: none;
+}
+
+.about-app{
+  color: #7b7988;
+  .side-h,
+  h1,
+  h2{
+    color: $white;
+  }
+  h1{
+    background: -webkit-linear-gradient(135deg, #fede6b, #ffc27c);
+    background: linear-gradient(135deg, #fede6b, #ffc27c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .home{
+    display: none;
+  }
+  .nav-page{
+    .about-page{
+      display: none;
+    }
+    .home-hage{
+      display: block;
+    }
+  }
+}
+
+.converted-text{
+  li{
+    width:47%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

@@ -6,6 +6,7 @@ $(document).ready( function() {
   horizontalScrolling();
   slickSlider();
   addClassOnClick();
+  aboutAppPage();
 });
 
 function tooltip(){
@@ -103,6 +104,16 @@ function addClassOnClick(){
       $('.list-holder').addClass('open');
     } else {
       $('.list-holder').removeClass('open');
+    }
+  });
+}
+
+function aboutAppPage(){
+  $('.nav-page').click(function(){
+    if(!$('body').hasClass('about-app')){
+      $('body').addClass('about-app');
+    } else {
+      $('body').removeClass('about-app');
     }
   });
 }

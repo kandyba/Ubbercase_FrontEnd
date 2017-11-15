@@ -1,4 +1,12 @@
 .switch-theme{
+  .modes{
+    .night{
+      display: none;
+    }
+    .day{
+      display: block;
+    }
+  }
   #wrapper{
     //color: #edeef0;
     background: #edeef0;
